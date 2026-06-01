@@ -27,7 +27,7 @@ app.get("/stats", (req, res) => {
 });
 
 app.use((req, res) => {
-  res.sendStatus(404);
+  res.end();
 });
 
 app.listen(port, () => {
