@@ -1,6 +1,6 @@
 # tp-wik-dps-01
 
-API réalisée avec Node.js, TypeScript et Express.
+API simple réalisée avec Node.js, TypeScript et Express.
 
 Le projet contient une route `GET /ping` qui retourne les headers de la requête au format JSON.
 
