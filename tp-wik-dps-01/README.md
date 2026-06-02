@@ -68,3 +68,29 @@ http://localhost:3000/stats
 ## Erreur 404
 
 Toutes les autres routes retournent une erreur `404`.
+
+## Docker
+
+Le projet peut aussi être lancé avec Docker.
+
+### Construire l'image
+
+Depuis le dossier du projet :
+
+```bash
+docker build -t tp-wik-dps-01 .
+```
+
+### Lancer le conteneur
+
+```bash
+docker run -p 3000:3000 -e PING_LISTEN_PORT=3000 -e INSTANCE_ID=docker-api tp-wik-dps-01
+```
+
+### Scanner l'image
+
+L'image Docker peut être scannée afin de détecter d'éventuelles vulnérabilités.
+
+```bash
+docker scout cves tp-wik-dps-01
+```
